@@ -1,0 +1,121 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.contain {
+  display: flex;
+  border: 5px solid;
+  background-color: #ededed;
+  min-height: 92vh;
+  margin: 20px;
+}
+
+aside {
+  width: 25%;
+  border-right: 5px solid;
+}
+
+.game-title {
+  height: 50%;
+  border-bottom: 5px solid;
+
+}
+
+.score {
+  height: 50%;
+}
+
+main {
+  width: 75%;
+  padding: 20px;
+}
+
+.memory-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-container {
+  background-image: url(images/card-back.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid;
+  position: relative;
+  width: calc(24% - 10px);
+  margin: 7px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-back {
+  background-image: url(images/card-back.jpg);
+  background-size: cover;
+  background-position: center;
+  /*position: absolute;
+  height: 100%;
+  width: 100%;*/
+  /*position: relative;*/
+  width: calc(24% - 10px);
+  z-index: 10;
+  backface-visibility: hidden;
+  transform: rotateY( 180deg );
+}
+
+.card-front {
+  /*background-image: url(images/spice-girls.jpg);*/
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: rotateY( 180deg );
+}
+
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+
+.spice-girls {
+  background-image: url(images/spice-girls.jpg);
+}
+
+.aol {
+  background-image: url(images/aol.png);
+}
+
+.butterfly-clips {
+  background-image: url(images/butterfly-clips.jpg);
+}
+
+.clueless {
+  background-image: url(images/clueless.png);
+}
+
+.disc-man {
+  background-image: url(images/disc-man.jpg);
+}
+
+.dunkaroos {
+  background-image: url(images/dunkaroos.jpg);
+}
+
+.mtv {
+  background-image: url(images/mtv.jpg);
+}
+
+.power-rangers {
+  background-image: url(images/power-rangers.png);
+}
+
+.rugrats {
+  background-image: url(images/rugrats.jpg);
+}
+
+.tamagotchi {
+  background-image: url(images/tamagotchi.jpg);
+}
